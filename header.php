@@ -36,35 +36,37 @@
 </head>
 
 <body class="<?php body_class(); ?>">
-  <div class="globalHeader">
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.1';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-  </div>
-
-  <div class="header-head">
-    <div class="header-logo">
-      <a href="<?php echo home_url(); ?>">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="旅するシンガーソングライター">
-      </a>
+  <div class="header-wrapper">
+    <div class="globalHeader">
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.1';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
     </div>
-  </div>
-  
-  <div class="header-nav">
-    <div class="header-nav-inner">
-      <div class="menu">
-        <?php
-        $args = array(
-          'menu' => 'header-nav', //管理画面で作成したメニューの名前
-          'container' => false, //<ul>タグを囲んでいる<div>タグを削除
-        );
-        wp_nav_menu( $args );
-        ?>
+
+    <div class="header-head">
+      <div class="header-logo">
+        <a href="<?php echo home_url(); ?>">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="旅するシンガーソングライター">
+        </a>
+      </div>
+    </div>
+    
+    <div class="header-nav">
+      <div class="header-nav-inner">
+        <div class="menu">
+          <?php
+          $args = array(
+            'menu' => 'header-nav', //管理画面で作成したメニューの名前
+            'container' => false, //<ul>タグを囲んでいる<div>タグを削除
+          );
+          wp_nav_menu( $args );
+          ?>
+        </div>
       </div>
     </div>
   </div>

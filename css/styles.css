@@ -776,27 +776,18 @@ blockquote cite {
   margin-bottom: 5px
 }
 
+/* header全体 */
+.header-wrapper {
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
 
-/*  メニューバーを横スクロールにする*/
 @media (max-width:599px) {
 
 
   .header-nav {
-    width: 100%;
-    height: 30px;
-    background: #0099CC;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-
-  }
-
-  .header-nav ul {
-    width: 800px;
-    height: 40px;
-    margin: 0 auto 2px auto;
-    list-style: none;
-    display: flex;
+    display: none;
   }
 
   .header-pageokuri p {
@@ -882,6 +873,7 @@ blockquote cite {
 .top-img__pc img {
   width: 100%;
   height: 100%;
+  margin-top: 135px;
 }
 
 .top-img__sp {
@@ -925,6 +917,7 @@ blockquote cite {
   .top-img__sp img {
     width: 100%;
     height: 100%;
+    margin-top: 56px;
   }
 
   .hajimete-button {
@@ -1060,8 +1053,6 @@ transition: 0.5s;
   margin: 0;
   max-width: 100%;
   height: auto;
-
-
 }
 
 
