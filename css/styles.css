@@ -901,7 +901,7 @@ blockquote cite {
   line-height: 60px;
   font-size: 1.4rem;
   box-shadow: 2px 2px 10px #AAAAAA;
-  transition: 1s ease;
+  /* transition: 1s ease; */
 }
 
 .hajimete-button:hover {
