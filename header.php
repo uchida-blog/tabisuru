@@ -57,23 +57,19 @@
     </div>
     
     <div class="header-nav">
-      <div class="header-nav-inner">
-        <div class="menu">
-          <?php
-          $args = array(
-            'menu' => 'header-nav', //管理画面で作成したメニューの名前
-            'container' => false, //<ul>タグを囲んでいる<div>タグを削除
-          );
-          wp_nav_menu( $args );
-          ?>
-        </div>
-      </div>
+      <?php
+      $args = array(
+        'menu' => 'header-nav', //管理画面で作成したメニューの名前
+        'container' => false, //<ul>タグを囲んでいる<div>タグを削除
+      );
+      wp_nav_menu( $args );
+      ?>
     </div>
   </div>
 
-  <div class="header-pageokuri">
+  <!-- <div class="header-pageokuri">
     <p>≫</p>
-  </div>
+  </div> -->
   <!--
   <?php get_search_form(); ?>
   -->
