@@ -100,7 +100,7 @@ wp_head();
 
 <div class="hajimetebutton">
       <?php if( is_home() ): ?>
-        <a href="<?php echo get_permalink(3669);?>"><img src="<?php echo get_template_directory_uri(); ?>/img/hajimetebutton.jpg" alt="初めての方はこちらをクリック"></a>
+        <a href="<?php echo get_permalink(3669);?>">初めての方</a>
           <?php endif; ?>
 </div>
 

@@ -18,15 +18,15 @@ if (have_posts()):
 </div>
 
 <div class="moji">
-  <h1><?php the_title(); ?></h1>
-
-
-        <div class="datetime">
-  <time datetime="<?php the_time('Y-m-d'); ?>"> <i class="fa fa-clock-o"></i><?php the_time('Y年m月d日'); ?></time>
+	<h1><?php the_title(); ?></h1>
+	<div class="datetime">
+		<time datetime="<?php the_time('Y-m-d'); ?>"> <i class="fa fa-clock-o"></i><?php the_time('Y年m月d日'); ?></time>
     </div>
+	
+	<div class="moji-excerpt"><?php the_excerpt(); ?></div>
 
 </div>
-<p><?php the_excerpt(); ?></p>
+
 
 
   </a>
