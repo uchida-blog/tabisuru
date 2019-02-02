@@ -47,8 +47,8 @@
     }(document, 'script', 'facebook-jssdk'));</script>
   </div>
 
-  <div class="header-site">
-    <div class="site">
+  <div class="header-head">
+    <div class="header-logo">
       <a href="<?php echo home_url(); ?>">
         <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="旅するシンガーソングライター">
       </a>
